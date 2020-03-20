@@ -3,8 +3,8 @@
 	var flatten = require('lodash.flatten');
 	var indexedFiles = require('./indexedFiles');
 
-		// this assumes build1.sh has been run, and the react docs fetched into
-		// Contents/Resources/Documents/React
+		 this assumes build1.sh has been run, and the react docs fetched into
+		 Contents/Resources/Documents/React
 	function getData() {
 		var res = indexedFiles.map(function(a) {
 			var path = __dirname + '/../Contents/Resources/Documents/react/docs/' +
@@ -22,11 +22,11 @@
 				names.push(name.trim());
 
 				var hash = $($(e).find('a').get(1)).attr('href');
-					// cherrio bug? hash includes the bla.html prefix
+					 cherrio bug? hash includes the bla.html prefix
 				hashes.push(hash.slice(hash.indexOf('#') + 1));
 			});
 
-				// gosh I'm glad that DOM API's over
+				 gosh I'm glad that DOM API's over
 
 			var url = 'react/docs/' + a.name + '.html#';
 
